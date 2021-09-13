@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  node_16:
+  node_16_npm7:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -28,7 +28,7 @@ jobs:
         run: npm -v
       - name: npm install
         run: npm ci
-  node_14:
+  node_14_npm6_14_15:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -40,7 +40,7 @@ jobs:
         run: npm -v
       - name: npm install
         run: npm ci
-  downgrade-npm:
+  node_14_npm6_14_14:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
