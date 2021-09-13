@@ -1,0 +1,23 @@
+{
+  "name": "slow-npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tallyb/slow-npm.git"
+  },
+  "keywords": [],
+  "author": "tallyb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tallyb/slow-npm/issues"
+  },
+  "homepage": "https://github.com/Tallyb/slow-npm#readme",
+  "dependencies": {
+    "geo-tz": "^6.0.1"
+  }
+}
