@@ -54,3 +54,13 @@ jobs:
         run: npm -v
       - name: npm install
         run: npm ci
+  yarn:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+        with: 
+          node-version: '16'
+      - name: yarn
+        run: yarn
