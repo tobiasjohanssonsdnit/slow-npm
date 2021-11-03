@@ -27,7 +27,7 @@ jobs:
       - name: npm version
         run: npm -v
       - name: npm install
-        run: npm ci
+        run: npm i --no-audit
   node_16_npm_install:
     runs-on: ubuntu-latest
     steps:
