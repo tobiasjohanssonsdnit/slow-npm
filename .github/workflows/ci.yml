@@ -28,6 +28,18 @@ jobs:
         run: npm -v
       - name: npm install
         run: npm ci
+  node_16_npm_install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+        with: 
+          node-version: '16'
+      - name: npm version
+        run: npm -v
+      - name: npm install
+        run: npm ci
   node_14_npm6_14_15:
     runs-on: ubuntu-latest
     steps:
