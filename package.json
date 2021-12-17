@@ -1,5 +1,5 @@
 {
-	"name": "agria",
+	"name": "huum",
 	"version": "1.0.0",
 	"dependencies": {
 		"@babel/polyfill": "7.0.0",
@@ -47,7 +47,6 @@
 		"enzyme-adapter-react-16": "^1.14.0",
 		"enzyme-to-json": "^3.3.5",
 		"eslint": "^5.16.0",
-		"eslint-config-agria": "^1.0.0",
 		"eslint-config-airbnb": "^17.1.0",
 		"eslint-plugin-import": "^2.17.3",
 		"eslint-plugin-jsx-a11y": "^6.1.1",
