@@ -16,31 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  node_16_npm7:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.4.0
-        with: 
-          node-version: '16'
-      - name: npm version
-        run: npm -v
-      - name: npm install
-        run: npm ci 
-  node_16_npm_install:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.4.0
-        with: 
-          node-version: '16'
-      - name: npm version
-        run: npm -v
-      - name: npm install
-        run: npm install --no-audit --prefer-offline
-  node_14_npm6_14_15:
+  node_14_npm6_14:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -48,11 +24,13 @@ jobs:
         uses: actions/setup-node@v2.4.0
         with: 
           node-version: '14'
+      - name: install 6.14.13
+        run: npm i -g npm@6.14.13 
       - name: npm version
         run: npm -v
       - name: npm install
         run: npm ci
-  node_14_npm6_14_14:
+  node_14_npm6_14_13:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -60,19 +38,10 @@ jobs:
         uses: actions/setup-node@v2.4.0
         with: 
           node-version: '16'
-      - name: install 6.14.14
-        run: npm i -g npm@6.14.14 
+      - name: install 6.14.13
+        run: npm i -g npm@6.14.13 
       - name: npm version
         run: npm -v
       - name: npm install
         run: npm ci
-  yarn:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.4.0
-        with: 
-          node-version: '16'
-      - name: yarn
-        run: yarn
+
