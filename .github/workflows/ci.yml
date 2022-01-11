@@ -30,18 +30,17 @@ jobs:
         run: npm -v
       - name: npm install
         run: npm install
-  node_14_npm6_14_13:
-    runs-on: ubuntu-latest
+ node_14_npm6_14_win:
+    runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.4.0
         with: 
-          node-version: '16'
+          node-version: '14'
       - name: install 6.14.13
         run: npm i -g npm@6.14.13 
       - name: npm version
         run: npm -v
       - name: npm install
         run: npm install
-
