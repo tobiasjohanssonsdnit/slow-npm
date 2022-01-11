@@ -30,7 +30,7 @@ jobs:
         run: npm -v
       - name: npm install
         run: npm install
- node_14_npm6_14_win:
+  node_14_npm6_14_win:
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v2
